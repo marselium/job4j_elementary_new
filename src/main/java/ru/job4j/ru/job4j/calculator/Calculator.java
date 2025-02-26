@@ -5,9 +5,16 @@ public class Calculator {
         int result = first + second;
         System.out.println(result);
     }
+
+    public static void minus(int first, int second) {
+        int result = first - second;
+        System.out.println(result);
+    }
     public static void main(String[] args) {
-        Calculator.plus(100, 500);
-        Calculator.plus(4, 2);
-        Calculator.plus(4, 5);
+        plus(100, 500);
+        plus(4, 2);
+        plus(4, 5);
+        minus(6,2);
+        minus(1,5);
     }
 }
