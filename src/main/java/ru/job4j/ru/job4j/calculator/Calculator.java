@@ -10,10 +10,21 @@ public class Calculator {
         int sixDivTwo = six / two;
         int fiveMinusTwo = five - two;
         int fourTimeTwo = four * two;
-        int sum = one + two;
-        System.out.println(sum);
+        int result = one + two;
+        System.out.println(result);
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);
+        one = 10;
+        two = 11;
+        result = one + two;
+        System.out.println(result);
+        int age = 18;
+        age = age + one;
+        System.out.println(age);
+        int size = 10;
+        size = 100;
+        size = size - 5;
+        System.out.println(size);
     }
 }
