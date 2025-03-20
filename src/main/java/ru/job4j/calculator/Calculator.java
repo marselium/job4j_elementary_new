@@ -10,11 +10,12 @@ public class Calculator {
         int result = first - second;
         System.out.println(result);
     }
+
     public static void main(String[] args) {
         plus(100, 500);
         plus(4, 2);
         plus(4, 5);
-        minus(6,2);
-        minus(1,5);
+        minus(6, 2);
+        minus(1, 5);
     }
 }

@@ -8,7 +8,7 @@ public class TriangleArea {
     }
 
     public static void main(String[] args) {
-        double res = area(2 , 2, 2);
+        double res = area(2, 2, 2);
         System.out.println(res);
     }
 }
