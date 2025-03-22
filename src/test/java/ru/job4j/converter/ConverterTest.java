@@ -11,7 +11,7 @@ class ConverterTest {
         float expected = 2;
         float output = Converter.rubToEur(input);
         float value = 0.0001f;
-        assertThat(output).isEqualTo(expected,withPrecision(value));
+        assertThat(output).isEqualTo(expected, withPrecision(value));
     }
 
     @Test

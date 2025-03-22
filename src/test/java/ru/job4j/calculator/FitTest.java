@@ -12,7 +12,7 @@ class FitTest {
         int h = 190;
         double exp = 103.5;
         double rsl = Fit.menWeight(h);
-        assertThat(exp).isEqualTo(rsl,withPrecision(0.01));
+        assertThat(exp).isEqualTo(rsl, withPrecision(0.01));
     }
 
     @Test
@@ -20,6 +20,6 @@ class FitTest {
         int h = 160;
         double exp = 57.5;
         double rsl = Fit.womenWeight(h);
-        assertThat(exp).isEqualTo(rsl,withPrecision(0.01));
+        assertThat(exp).isEqualTo(rsl, withPrecision(0.01));
     }
 }
