@@ -15,6 +15,7 @@ public class MathCalculator {
         return multiply(a, b) + sum(a, b)
                 + minus(a, b) + divide(a, b);
     }
+
     public static void main(String[] args) {
         System.out.println(sumAndMultiply(10, 20));
         System.out.println(minusAndDivide(100, 10));
