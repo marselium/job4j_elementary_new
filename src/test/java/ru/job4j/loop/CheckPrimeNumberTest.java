@@ -7,6 +7,13 @@ import static org.assertj.core.api.Assertions.*;
 class CheckPrimeNumberTest {
 
     @Test
+    void when2ThenTrue() {
+        int in = 2;
+        boolean rsl = CheckPrimeNumber.check(in);
+        assertThat(rsl).isTrue();
+    }
+
+    @Test
     void when5ThenTrue() {
         int in = 5;
         boolean rsl = CheckPrimeNumber.check(in);
