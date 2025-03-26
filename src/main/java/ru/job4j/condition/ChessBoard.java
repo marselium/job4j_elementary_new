@@ -21,6 +21,7 @@ public class ChessBoard {
         }
         return rsl;
     }
+
     public static boolean isValidPoint(int coordinate) {
         return coordinate >= 0 && coordinate <= 7;
     }
