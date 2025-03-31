@@ -31,6 +31,29 @@ class MatrixCheckTest {
     }
 
     @Test
+    void whenMonoVerticalTrue() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        int col = 2;
+        boolean rsl = MatrixCheck.monoVertical(input, col);
+        assertThat(rsl).isTrue();
+    }
+    @Test
+    void whenMonoVerticalFalse() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', ' '},
+                {' ', ' ', 'X'},
+        };
+        int col = 2;
+        boolean rsl = MatrixCheck.monoVertical(input, col);
+        assertThat(rsl).isFalse();
+    }
+
+    @Test
     public void whenDiagonalFullX() {
         char[][] input = {
                 {'X', ' ', ' '},
