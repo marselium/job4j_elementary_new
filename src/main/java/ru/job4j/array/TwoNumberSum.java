@@ -12,10 +12,12 @@ public class TwoNumberSum {
                 return arr;
             }
             if (j == array.length - 1) {
-                j = i;
                 i++;
+                j = i;
             }
-            j++;
+            if (i + 1 != array.length) {
+                j++;
+            }
         }
         return new int[0];
     }
