@@ -31,4 +31,29 @@ class PointTest {
         assertThat(rsl).isEqualTo(exp, withPrecision(0.01));
     }
 
+    @Test
+    void when000to020then2() {
+        Point first = new Point(0, 0, 0);
+        Point second = new Point(0, 2, 0);
+        double rsl = first.distance3d(second);
+        double exp = 2.0;
+        assertThat(rsl).isEqualTo(exp, withPrecision(0.01));
+    }
+
+    @Test
+    void whenMinus1011to131then11Dot18() {
+        Point first = new Point(-10, 1, 1);
+        Point second = new Point(1, 3, 1);
+        double rsl = first.distance3d(second);
+        double exp = 11.18;
+        assertThat(rsl).isEqualTo(exp, withPrecision(0.01));
+    }
+    @Test
+    void when1000000011to131then2() {
+        Point first = new Point(10000000, 1, 1);
+        Point second = new Point(1, 3, 1);
+        double rsl = first.distance3d(second);
+        double exp = 9999999;
+        assertThat(rsl).isEqualTo(exp, withPrecision(0.01));
+    }
 }
